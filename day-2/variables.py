@@ -3,7 +3,6 @@
 # EXERCISE 1
 
 # Declare a first name variable and assign a value to it
-from itertools import count
 from math import floor, remainder
 
 
