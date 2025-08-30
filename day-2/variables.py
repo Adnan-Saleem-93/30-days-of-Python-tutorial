@@ -3,7 +3,7 @@
 # EXERCISE 1
 
 # Declare a first name variable and assign a value to it
-from math import floor, remainder
+from math import remainder
 
 
 first_name = 'Adnan'
@@ -80,7 +80,7 @@ print(remainder)
 exp = num_one ** num_two
 print(exp)
 # Find floor division of num_one by num_two and assign the value to a variable floor_division
-floor_division = floor(num_one / num_two)
+floor_division = num_one // num_two
 print(floor_division)
 # The radius of a circle is 30 meters.
 # Calculate the area of a circle and assign the value to a variable name of area_of_circle
