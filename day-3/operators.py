@@ -7,28 +7,28 @@ my_height = 5.11
 # Declare a variable that store a complex number
 complex = 1j+2
 # Write a script that prompts the user to enter base and height of the triangle and calculate an area of this triangle (area = 0.5 x b x h).
-base = input('Enter base')
-height = input('Enter height')
-area = 0.5 * base * height
+base = input('Enter base: ')
+height = input('Enter height: ')
+area = 0.5 * int(base) * int(height)
 print("area of triangle = ", area)
 # Write a script that prompts the user to enter side a, side b, and side c of the triangle. Calculate the perimeter of the triangle (perimeter = a + b + c).
-side_a = input('Enter side a')
-side_b = input('Enter side b')
-side_c = input('Enter side c')
+side_a = input('Enter side a: ')
+side_b = input('Enter side b: ')
+side_c = input('Enter side c: ')
 
-perimeter = side_a + side_b + side_c
+perimeter = int(side_a) + int(side_b) + int(side_c)
 print('perimeter of triangle = ', perimeter)
 
 
 # Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
-length = input('Enter length')
-width = input('Enter width')
+length = int(input('Enter length: '))
+width = int(input('Enter width: '))
 area =  length * width
 print("area of triangle = ", area)
 perimeter = 2 * (length + width)
 print('perimeter of triangle = ', perimeter)
 # Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
-radius = input('Enter radius')
+radius = float(input('Enter radius: '))
 PI = 3.14
 area =  PI * radius ** 2
 print("area of circle = ", area)
@@ -46,7 +46,7 @@ y = 0
 # equation becomes:
 # 2 * x = 2
 # dividing by 2 both sides
-(2/2) * x = 2/2
+# (2/2) * x = 2/2
 x_intercept = 1
 
 print(f"Equation: y = 2x - 2")
@@ -66,5 +66,11 @@ print(f"X-intercept: {x_intercept}")
 # Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
 # Check if type of '10' is equal to type of 10
 # Check if int('9.8') is equal to 10
+isEqual = int(float("9.8")) == 10
+assertion  = 'not equal' if isEqual == False else "equal"
+print(f'9.8 is {assertion} to 10')
 # Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
-
+hours = int(input("Enter hours: "))
+rate_per_hour = int(input("Enter rate per hour: "))
+pay = hours * rate_per_hour
+print("Pay of th person = ", pay)
